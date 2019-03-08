@@ -1,4 +1,4 @@
-EE5902: Multiprocessor Systems Project
+Multiprocessor Systems Project
 
 ======================
 
