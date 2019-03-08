@@ -1,0 +1,105 @@
+@HYPERPERIOD 500
+
+@TASK_GRAPH 0 {
+	PERIOD 500
+
+	TASK t0_0	TYPE 8 
+	TASK t0_1	TYPE 4 
+	TASK t0_2	TYPE 11 
+	TASK t0_3	TYPE 5 
+	TASK t0_4	TYPE 5 
+	TASK t0_5	TYPE 5 
+	TASK t0_6	TYPE 8 
+	TASK t0_7	TYPE 1 
+	TASK t0_8	TYPE 2 
+	TASK t0_9	TYPE 14 
+	TASK t0_10	TYPE 3 
+	TASK t0_11	TYPE 1 
+	TASK t0_12	TYPE 15 
+
+	ARC a0_0 	FROM t0_0  TO  t0_1 TYPE 4
+	ARC a0_1 	FROM t0_1  TO  t0_2 TYPE 16
+	ARC a0_2 	FROM t0_0  TO  t0_3 TYPE 3
+	ARC a0_3 	FROM t0_2  TO  t0_4 TYPE 23
+	ARC a0_4 	FROM t0_3  TO  t0_5 TYPE 30
+	ARC a0_5 	FROM t0_3  TO  t0_6 TYPE 23
+	ARC a0_6 	FROM t0_1  TO  t0_7 TYPE 0
+	ARC a0_7 	FROM t0_7  TO  t0_8 TYPE 37
+	ARC a0_8 	FROM t0_7  TO  t0_9 TYPE 20
+	ARC a0_9 	FROM t0_2  TO  t0_10 TYPE 38
+	ARC a0_10 	FROM t0_6  TO  t0_10 TYPE 21
+	ARC a0_11 	FROM t0_6  TO  t0_11 TYPE 12
+	ARC a0_12 	FROM t0_4  TO  t0_11 TYPE 20
+	ARC a0_13 	FROM t0_5  TO  t0_12 TYPE 30
+
+	HARD_DEADLINE d0_0 ON t0_8 AT 400
+	HARD_DEADLINE d0_1 ON t0_9 AT 400
+	HARD_DEADLINE d0_2 ON t0_10 AT 400
+	HARD_DEADLINE d0_3 ON t0_11 AT 500
+	HARD_DEADLINE d0_4 ON t0_12 AT 400
+}
+
+
+
+
+@EXECUTION_TIME 0 {
+#        price
+       12.3111
+
+#------------------------------------------------------------------------------
+# type    exec_time
+      0     9.20827
+      1     9.94296
+      2     9.87161
+      3     9.72361
+      4     10.8595
+      5     9.05809
+      6     9.92952
+      7     9.07029
+      8     9.96419
+      9     10.3952
+     10     9.06559
+     11     10.1426
+     12      10.198
+     13     9.41276
+     14     10.6733
+     15     9.98562
+     16     9.24412
+     17     9.22917
+     18     10.6436
+     19     10.6772
+     20     9.41251
+     21     10.7861
+     22     9.51536
+     23     10.5652
+     24     10.2342
+     25     9.56811
+     26     10.2124
+     27     9.07591
+     28     9.77276
+     29     9.73186
+     30     9.24889
+     31     10.4456
+     32     9.48514
+     33      9.4234
+     34     9.17835
+     35     9.57896
+     36     9.00687
+     37     10.3187
+     38      9.4666
+     39     9.34756
+     40     9.63388
+     41      10.024
+     42     9.84128
+     43     10.1996
+     44     10.2866
+     45     9.38584
+     46     10.7756
+     47       9.685
+     48     9.10384
+     49     10.3771
+}
+
+
+
+
